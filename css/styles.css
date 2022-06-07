@@ -123,7 +123,11 @@ ul {
 /* --------------------- HERO ---------------------- */
 
 .hero-title {
-  background-color: #2f303a;
+  background-image: url(../images/Hero-bg.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
   padding-top: 200px;
   padding-bottom: 200px;
 }
