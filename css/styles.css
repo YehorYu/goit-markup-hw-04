@@ -112,11 +112,6 @@ ul {
   height: 16px;
 }
 
-.icon-img:hover,
-.icon-img:focus {
-  fill: var(--accent-color);
-}
-
 .header-list .link {
   display: block;
 
@@ -150,8 +145,10 @@ ul {
   color: var(--accent-color);
 }
 
-.contact-list:hover,
-.contact-list:focus
+.contact-list:hover .icon-img,
+.contact-list:focus .icon-img {
+  fill: var(--accent-color);
+}
 
 /* --------------------- HERO ---------------------- */
 
@@ -164,7 +161,7 @@ ul {
       rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
-    url(../images/Hero-bg.jpg);
+    url(../images/hero-bg.jpg);
   max-width: 1600px;
   height: 600px;
   background-repeat: no-repeat;
