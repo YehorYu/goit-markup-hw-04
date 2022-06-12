@@ -44,6 +44,9 @@ ul {
 .header-title .container {
   display: flex;
   align-items: center;
+}
+
+.header-title {
   border-bottom: 1px solid #ececec;
 }
 
@@ -69,17 +72,19 @@ ul {
   font-size: 26px;
   line-height: 1.19;
   letter-spacing: 0.03em;
+}
 
-  margin-right: 93px;
+.header-title .logo {
   padding-top: 24px;
   padding-bottom: 24px;
+  margin-right: 93px;
 }
 
 .header-item:not(:last-child) {
   margin-right: 50px;
 }
 
-.header-item {
+.header-title .link {
   padding-top: 32px;
   padding-bottom: 32px;
 }
@@ -138,6 +143,8 @@ ul {
   font-size: 14px;
   line-height: 1.14;
   color: #757575;
+  padding-top: 32px;
+  padding-bottom: 32px;
 }
 
 .contact-list:hover,
@@ -167,6 +174,7 @@ ul {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
+  margin: 0 auto;
 }
 
 .hero {
@@ -186,6 +194,7 @@ ul {
 }
 
 .btn-title {
+  font-family: "Roboto";
   font-style: normal;
   font-weight: 700;
   font-size: 16px;
@@ -195,12 +204,14 @@ ul {
   text-align: center;
   cursor: pointer;
   color: #ffffff;
-  background-color: #2196f3;
+  letter-spacing: 0.06em;
 
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  background: #2196f3;
   border-radius: 4px;
+  border: 0;
 
-  margin: auto;
+  margin: 0 auto;
+  padding: 10px 32px;
 }
 
 .btn-title:hover,
@@ -230,19 +241,18 @@ ul {
 }
 
 .preferences-icon {
-  display: flex;
   width: 270px;
   height: 120px;
 
   background: #f5f4fa;
   border-radius: 4px;
   margin-bottom: 30px;
-  background-position: center;
 }
 
 .icons {
+  display: flex;
+  align-items: center;
   justify-content: center;
-  padding: 25px 100px;
 }
 
 .preferences-item {
@@ -316,6 +326,12 @@ ul {
   background-color: #f5f4fa;
 }
 
+.img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .team-list {
   background-color: var(--primery-bg-color);
 }
@@ -353,7 +369,6 @@ ul {
   padding-top: 30px;
   text-align: center;
   padding-bottom: 30px;
-  /* margin-bottom: 10px; */
 }
 
 .team-item {
@@ -370,8 +385,8 @@ ul {
 }
 
 .team-soc-link {
-  width: 44px;
-  height: 44px;
+  /* width: 44px;
+  height: 44px; */
   margin-right: 10px;
 }
 
@@ -383,8 +398,12 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100%;
-  height: 100%;
+  /* max-width: 100%;
+  max-height: 100%; */
+
+  width: 44px;
+  height: 44px;
+
   border-radius: 50%;
   background-color: var(--primery-bg-color);
 }
@@ -467,6 +486,10 @@ ul {
   margin-right: 0;
 }
 
+.footer-item .link {
+  margin-bottom: 20px;
+}
+
 .address-teg {
   font-style: normal;
   font-weight: 400;
@@ -502,11 +525,11 @@ ul {
 }
 
 .footer-cos {
-  display: block;
+  /* display: block;
   width: 206px;
-  height: 80px;
+  height: 80px; */
   margin-left: 70px;
-  padding-top: 10px;
+  /* padding-top: 10px; */
 }
 
 .footer-cos-head {
@@ -520,7 +543,7 @@ ul {
   color: #ffffff;
 
   text-transform: uppercase;
-  padding-bottom: 20px;
+  margin-bottom: 20px;
 }
 
 .footer-soc-list {
@@ -569,16 +592,19 @@ ul {
 }
 
 .hero-btn {
-  font-family: inherit;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   cursor: pointer;
   color: var(--tittle-text-color);
   background: #f5f4fa;
-  border-radius: 4px;
   letter-spacing: 0.03em;
 
   padding: 6px 22px;
+  border-radius: 4px;
+  border: 0;
 }
 
 .hero-btn:hover,
@@ -586,6 +612,8 @@ ul {
 .hero-btn .current {
   color: #ffffff;
   background-color: #2196f3;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .exemple-container {
@@ -596,7 +624,9 @@ ul {
 }
 
 .exemple-item {
-  margin-bottom: 0;
+  /* margin-bottom: 0; */
+  max-width: 100%;
+  height: auto;
 }
 
 .exemple-name {
