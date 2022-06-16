@@ -147,6 +147,11 @@ ul {
   padding-bottom: 32px;
 }
 
+.header-link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+
 .contact-list:hover,
 .contact-list:focus {
   color: var(--accent-color);
@@ -582,6 +587,10 @@ ul {
 .footer-soc-item:hover,
 .footer-soc-item:focus {
   background-color: #2196f3;
+}
+
+.footer-soc-item.link {
+  margin-bottom: 0;
 }
 
 /* ------------------------PORTFOLIO---------------------- */
